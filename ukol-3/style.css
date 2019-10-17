@@ -1,0 +1,43 @@
+body{font-family: Montserrat, Roboto, sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgb(2, 57, 73);
+    margin-left: 2rem;}
+
+    h1{font-size: 2.05rem;
+        color: rgb(1, 87, 138);
+        line-height: 1,5;}
+    
+    h2{font-size: 1.3rem;
+        color: rgb(1, 87, 138);
+        line-height: 1;
+        margin-top: 1.8rem;
+        margin-bottom: 0.6rem;}
+
+    div{color: rgb(67, 72, 73);
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.6;} 
+
+a:link {color: rgb(67, 72, 73);font-weight: 500}
+a:visited {color: rgb(201, 181, 5)}
+a:active {color: rgb(209, 196, 9);}
+
+
+img{float: left; margin-left: 0rem; margin-right: 0.5rem; margin-top: 0.2rem; }
+
+.img img {height: 350px; 
+    border: solid 1px rgb(118, 126, 128);
+    margin: 0.3rem;}
+
+.img2 img {height: 200px; 
+        border: solid 1px rgb(118, 126, 128);
+        margin: 0.3rem;
+        margin-bottom: 5rem;}
+
+li{   margin-left: 0.4rem;}
+
+.podsebe {
+    display: grid;;
+}
+
