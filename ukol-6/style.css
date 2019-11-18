@@ -1,0 +1,154 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+
+*{border: solid black 1px;}
+
+/*
+ BARVY
+ sede pozadi      #e5e5e5
+ svetle fialova   #48418e
+ tmave fialova    #25133d
+
+ POUZITE PISMO
+ Source Sans Pro - rezy pisma light 300, regular 400 a bold 700*/
+
+body {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 6rem;
+    background-color: #e5e5e5;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.obal {
+    width: 960px; /* obsah stránky je omezený do pruhu širokého 960px */
+    margin: 0 auto; /* pruh je na stránce vycentrovaný */
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+/* ----- zde začni psát vlastní CSS ----- */
+
+a{
+    text-decoration: none;
+    }
+    
+.head-header{
+        display: flex;
+        background-color: white;
+        align-items: center;
+        padding: 0rem;
+        margin-left: 2rem;
+        font-weight: 400;
+        align-items: center;
+        border: 0;  
+        }
+    .brand-header{
+            font-weight: 700;
+            margin: 0;
+               }
+        .head-nav{
+        margin-left: 2rem;
+        }
+            .head-nav ul {
+            display: flex; /*zarovná navigaci do řádku*/
+            margin: 0;
+            padding: 0;
+            list-style: none; /*odmaže odrážky*/ 
+            }
+                .head-nav li{
+                margin:0.5rem;/*mezery mezi položkama*/
+                }
+                    .head-nav a{
+                    font-size: 1rem;
+                    padding: 0.5rem; /*zvětšení klikacího prostoru*/  
+                    }
+    h1{
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    font-size: 6rem;
+    margin-bottom: 0 auto;
+    margin-left: 2rem;
+    margin-right: 20rem;
+    color: white;
+    }
+    
+    .div-telefon{
+       display: flex;
+       float: right;
+             }
+    
+    .content1{
+    background-image: url(pozadi.jpg) ;
+    width: 960px;
+    padding: 0;
+    margin: 0;
+    }
+    .content1 p{
+        margin-left: 2rem;
+        margin-right: 35rem;
+        color: white;
+        font-size: 2rem;
+        font-weight: 300;
+    }
+        .content1 ul{
+        padding: 0;
+        margin-left: 2rem;
+        margin-right: 35rem;
+        display: flex;
+        list-style: none;
+        }
+            .content1 li{
+            padding: 0;
+            margin-right: 1rem;
+            }
+                .content1 a{
+                display: inline-block;
+                width: 100%;
+                border-style: solid;
+                border-color: white;
+                border-radius: 5%;
+                box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.52);
+                margin: 0 auto;
+                color:white;
+                padding: 0.5rem;
+                padding-right: 1rem;
+                padding-left: 1rem;
+                }
+                    .content1 a:hover{
+                    background-color:#48418e ;
+                    }
+.content2 {
+display: grid;
+grid-template-columns: 33.3% 33.3% 33.3%;
+}  
+    .column {
+    padding: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    }   
+/*
+.content2 ul{
+display: flex;
+list-style: none;
+text-align: center;
+}
+    .content2 li{
+    padding: 2rem;
+    } */
+
+.footer{
+color: white;
+width: 960px;
+background: #48418e;
+padding: 0;
+ }
+    .footer p{
+    margin: 0 auto;
+    padding: 0.8rem;
+    text-align: center;
+    font-size: 0.9rem;
+    }
+
