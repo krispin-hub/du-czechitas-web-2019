@@ -1,0 +1,30 @@
+h1{
+background-color: mediumturquoise;
+}
+h1 span{
+    display: block;
+    background-color: rgb(28, 131, 28);
+  transform-origin: center bottom;
+
+    height: 100px;
+    width: 100px;
+    line-height: 100px;
+    text-align: center;
+    position: relative;
+    
+}
+
+h1:hover span{ 
+    animation: mavani ease-in-out 0.4s infinite alternate ;
+    }
+
+    @keyframes mavani {
+        0%{
+            transform:rotate(-45deg)
+        }
+        
+        100%{
+            transform: rotate(45deg);
+        }
+
+    }
