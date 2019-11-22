@@ -76,11 +76,14 @@ a {
     font-size: 16px;
     padding: 0.5rem;
     /*zvětšení klikacího prostoru*/
-    display: block;
-    }
+    display: block; 
+    transition: transform 0.5s ease;
+}
 
 .head-nav a:hover{
     color: #25133d;
+    transition: transform 0.5s ease 0.2s;
+    transform: translateY(-5px);
 }
 
 h1 {
@@ -144,12 +147,15 @@ h1 {
     padding: 1rem;
     padding-right: 1rem;
     padding-left: 1rem;
+    transition: background-color 0.5s ease;
+    
 }
+    .content1 a:hover {
+        background-color: #48418e;
+        transition: background-color 1s ease;
+    }
 
-.content1 a:hover {
-    background-color: #48418e;
-}
-
+/*
 .content1 a:hover {
     animation: pohyb ease-in-out 0.5s infinite alternate ;
 }
@@ -161,7 +167,7 @@ h1 {
         100%{
             transform: rotate(2deg);
         }
-    }
+    }*/
 
 .content2 {
     display: grid;
