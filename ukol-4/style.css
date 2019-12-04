@@ -13,6 +13,7 @@ html { box-sizing: border-box; }
 */
 body {
     background-color: #bdc3c7;
+    margin: 0;
     }
 h1{
     font-family: montserrat;
@@ -53,6 +54,15 @@ h1{
     width: 100%;
 }
 
+.odkazy {
+    padding: 0;
+    margin:0;
+    }
+.odkazy a{
+    display: block;
+    width: unset;
+}
+
 .odkazy li{
     font-family: montserrat;
     font-size: 0.8rem;
@@ -60,43 +70,50 @@ h1{
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;;
-    padding: 0.4rem;
+    padding: 0;
     text-align: center;
-    width: 250px;
+    display: inline-block;
+}
+.odkazy .facebook {
+    width: 50%;
+}
+.odkazy .twitter {
+    width: 50%;
 }
 
     .portfolio a{
         text-decoration: none;
-        display: inline; 
-        padding: 0.4rem;
+        display: inline-block; 
+        padding: 0.8rem;
         color: white;
         border-bottom: 1px #3f464d solid;  
-        border-top: 1px #3f464d solid; 
+        border-top: 1.5px #3f464d solid; 
         text-align: center;
+        margin: 0 auto;
+        width: 250px;
         }
         .portfolio a:hover{
         background-color: #e74c3c;
-        width: 100%;
         }
 
     .facebook a{
         text-decoration: none;
-        padding: 0.4rem;
         color: white;
-        width:50%;
+        padding: 0.8rem;
 
         }
         .facebook a:hover{
         background-color: #3b5998;
-               }
+        padding: 0.8rem;
+        }
 
     .twitter a{
         text-decoration: none;
-        padding: 0.4rem ;
         color: white;
-        width: 50%;
+        padding: 0.8rem;
 
         }
         .twitter a:hover{
         background-color: #1da1f2;
+        padding: 0.8rem
         }
