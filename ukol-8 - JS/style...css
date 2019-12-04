@@ -1,0 +1,299 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+/*
+ sede pozadi      #e5e5e5 / svetle fialova   #48418e /  tmave fialova    #25133d
+ Source Sans Pro - rezy pisma light 300, regular 400 a bold 700*/
+
+body {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 6rem;
+    background-color: #e5e5e5;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.obal {
+    max-width: 960px;
+    /* obsah stránky je omezený do pruhu širokého 960px */
+    margin: 0 auto;
+    /* pruh je na stránce vycentrovaný */
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ----- zde začni psát vlastní CSS ----- */
+
+.menu-show{
+    display: block !important;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.head-header {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    padding: 0rem;
+    margin-left: 2rem;
+    font-weight: 400;
+    align-items: center;
+    border: 0;
+    justify-content: center;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+    color: #48418e;
+}
+
+#navbar {
+    margin-left: 2rem;
+}
+
+#navbar ul {
+    display: flex;
+    /*zarovná navigaci do řádku*/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /*odmaže odrážky*/
+}
+
+#navbar li {
+    margin: 0.5rem;
+    /*mezery mezi položkama*/
+}
+
+#navbar a {
+    font-size: 16px;
+    padding: 0.5rem;
+    /*zvětšení klikacího prostoru*/
+    display: block; 
+    transition: transform 0.5s ease;
+}
+
+#navbar a:hover{
+    color: #25133d;
+    transition: transform 0.5s ease 0.2s;
+    transform: translateY(-5px);
+}
+
+h1 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    font-size: 90px;
+    margin-bottom: 3rem;
+    margin-top: unset;
+    margin-left: 2rem;
+    margin-right: 360px;
+    color: white;
+}
+.div-telefon {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -7px;
+}
+
+.content1 {
+    background-image: url(pozadi.jpg);
+    background-size: cover;
+    padding: 1rem;
+    margin: 0;
+    position: relative;
+}
+
+.content1 p {
+    margin-left: 2rem;
+    margin-right: 360px;
+    margin-bottom: 4rem;
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.content1 ul {
+    padding: 0;
+    margin-left: 2rem;
+    margin-right: 25rem;
+    margin-bottom: 3rem;
+    display: flex;
+    list-style: none;
+}
+
+.content1 li {
+    padding: 0;
+    margin-right: 1rem;
+    text-align: center;
+    font-size: 20px;
+}
+
+.content1 a {
+    display: block;
+    width: 100%;
+    border: 1px white solid;
+    border-radius: 10px;
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.52);
+    margin: 0 auto;
+    color: white;
+    padding: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    transition: background-color 0.5s ease;
+    
+}
+    .content1 a:hover {
+        background-color: #48418e;
+        transition: background-color 1s ease;
+    }
+
+/*
+.content1 a:hover {
+    animation: pohyb ease-in-out 0.5s infinite alternate ;
+}
+    @keyframes pohyb {
+        0%{
+            transform:rotate(-2deg)
+        }
+              
+        100%{
+            transform: rotate(2deg);
+        }
+    }*/
+
+.content2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+}
+.content2 img{
+    height: 75px;
+}
+
+h2{
+    color:#48418e ;
+    font-size: 20px;
+}
+
+.column {
+    padding: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer {
+    color: white;
+    background: #48418e;
+    padding: 0;
+}
+
+.footer p {
+    margin: 0 auto;
+    padding: 0.8rem;
+    text-align: center;
+    font-size: 14px;
+}
+
+@media print{
+    .head-header{
+        display: none
+    }
+    .content1 ul{
+        display: none;
+    }
+}
+/*extra small (šířka okna do 767px)
+small (768–991)
+medium (992–1199)
+large (1200 a více)*/
+
+@media screen and (max-width: 768px) {
+    .head-header{
+        margin: unset;
+        justify-content: center;
+    }
+    #navbar{
+        display: none;
+    }
+    
+    .div-telefon{
+        display: none;
+        position: unset;
+    }
+    .content2 {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+    }
+    h1{
+        margin-left: unset;
+        margin-right: unset;
+        text-align: center;
+    }
+    .content1 p{
+        text-align: center;
+        margin-left: unset;
+        margin-right: unset;
+    }
+    .content1 ul{
+        margin-left: unset;
+        margin-right: unset;
+        justify-content: center;
+    }
+   
+   
+    #navbarToggler {
+        color: #48418e;
+        display: block;
+        width: 3rem;
+        height: 3rem;
+        margin: 0.3rem 0rem 0.2rem 2rem;
+        position: relative;
+        font-size: 0.7rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: .8;
+        text-align: center;
+        z-index: 95;
+        border: none;
+        background-color: white;
+    }
+        #navbarToggler img {
+            height: 25px;
+            margin-top: 0.1rem;
+        }
+}
+
+
+@media screen and (min-width: 768px) {
+    #navbarToggler {
+        display: none;
+    }
+}
+        
+
+
+
+
+
+
+
+
+

@@ -10,13 +10,18 @@
 
     </head>
     <body>
-    <div class="obal">
-        <header class="head-header">
-          
-        <a class="brand-header" href="#">Super appka</a>
+<div class="obal">
+     
+    <header class="head-header">
+           <a class="navbar-brand" href="#">Super appka</a>
 
-            <nav class="head-nav"> 
-                <ul>
+            <button id="navbarToggler" >
+                    <img src="menu.svg">
+                </button>
+
+
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Úžasný design</a>
                     </li>
@@ -28,14 +33,9 @@
                     </li>
                 </ul>
             </nav>
-                
-        <div class="header-menu-button">
-                     menu
-                    <img src="menu.svg" alt="menu-icon">
-        </div>
 
-
-        </header>
+        
+</header>
     
         <main>
             <div class="content1">
@@ -57,7 +57,8 @@
                 </ul>
                 
             </div>              
-       
+        
+            
 <div class="content2">
     <div class="column">
             <img src="letadlo.svg" alt="letadlo"> <br>
@@ -78,18 +79,44 @@
         </div>
 </div>
        
-          
+         
         </main>
     
         <footer class="footer">
             <p>
                 &copy; 2016, Web od A do Z
             </p>
-        </footer> 
-        
-          
+        </footer>         
+</div>
+ <!-- end .obal-->
+<script>
+        (function () {
+            // Zde budeme psát kód
+            let navbarToggler = document.querySelector('#navbarToggler')
+            let navbar = document.querySelector('#navbar')
+           
+            navbarToggler.addEventListener('click',function(e){
+                navbar.classList.toggle('menu-show')
+                e.stopPropagation()
+        })
+
+        document.addEventListener('click', function(){
+            navbar.classList.remove('menu-show')
+        })
+
+        document.addEventListener('keydown', function (e){
+            if(e.keyCode === 27) {
+                //escape
+            navbar.classList.remove('menu-show')
+            }
+            
+        })
+
+        })()
+</script>
 
 
-    </div> 
+
+
     </body> 
 </html>
