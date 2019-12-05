@@ -36,8 +36,7 @@ body {
 
 .menu-show{
     display: block !important;
-
-}
+ }
 
 a {
     text-decoration: none;
@@ -53,6 +52,7 @@ a {
     align-items: center;
     border: 0;
     justify-content: center;
+    height: 3rem;
 }
 
 .navbar-brand {
@@ -60,11 +60,7 @@ a {
     margin: 0;
     text-transform: uppercase;
     color: #48418e;
-}
-
-#navbar {
-    margin-left: 2rem;
-}
+    }
 
 #navbar ul {
     display: flex;
@@ -229,10 +225,28 @@ large (1200 a více)*/
         margin: unset;
         justify-content: center;
     }
-    #navbar{
+    #navbar {
         display: none;
+        position: absolute;
+        top: 0.9rem;
+        right: 0px;
+        z-index: 10;
+        background-color: white;
     }
-    
+    #navbar li {
+       background: linear-gradient(90deg, rgba(48,9,121,0.08476894175639005) 35%, rgba(255,0,147,0.10717790534182425) 100%);
+     padding: 0;
+     margin: 0rem 0.6rem 0.6rem 0.6rem;
+    }
+    .navbar-nav {
+        flex-direction: column;
+    }
+    .navbar-brand{
+    position: absolute;
+    left: 2rem;
+    ;
+    }  
+
     .div-telefon{
         display: none;
         position: unset;
@@ -257,28 +271,28 @@ large (1200 a více)*/
         margin-right: unset;
         justify-content: center;
     }
-   
-   
+      
     #navbarToggler {
         color: #48418e;
         display: block;
         width: 3rem;
         height: 3rem;
-        margin: 0.3rem 0rem 0.2rem 2rem;
-        position: relative;
+        position: absolute;
         font-size: 0.7rem;
         font-weight: 700;
         text-transform: uppercase;
         line-height: .8;
         text-align: center;
-        z-index: 95;
         border: none;
         background-color: white;
+        right: 1rem;
     }
         #navbarToggler img {
             height: 25px;
             margin-top: 0.1rem;
         }
+
+
 }
 
 
