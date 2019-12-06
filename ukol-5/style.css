@@ -1,0 +1,119 @@
+/* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
+html { box-sizing: border-box; }
+*, ::after, ::before { box-sizing: inherit; }
+/*
+ BARVY
+ czechitas  #b92e81
+ pozadi     #bdc3c7
+ tmava      #31363b
+ delitka    #3f464d
+ portfolio  #e74c3c
+ facebook   #3b5998
+ twitter    #1da1f2
+*/
+body {
+    background-color: #bdc3c7;
+    margin: 0;
+    }
+h1{
+    font-family: montserrat;
+    font-weight: 600;
+    font-size: 1.3rem;
+    padding: 1rem;
+    margin: -15px;
+   }
+.obsah{
+    font-family: open sans;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color:white;
+    margin: 1rem;
+    
+}
+.profil{
+    width:250px;
+    background-color: #31363b;
+}
+
+.logo{
+    background: #b92e81;
+    border-radius: 100%;
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.52);
+}
+
+.hlavicka{
+    position: relative;
+}
+.logo{
+    position: absolute;
+    bottom: -20px;
+    right:20px;
+}
+
+.foto{
+    width: 100%;
+}
+
+.odkazy {
+    list-style: none;
+    padding: 0;
+    margin:0;
+    display: flex;
+    flex-wrap: wrap;
+    }
+
+.odkazy a{
+    display: block;
+    width: unset;
+    border: 1px #3f464d solid;
+    font-family: montserrat;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0;
+    text-align: center;
+}
+
+.facebook {
+    width: 50%;
+}
+.twitter {
+    width: 50%;
+}
+.portfolio{
+    width: 100%
+}
+
+    .portfolio a{
+        padding: 0.8rem;
+        color: white;
+        text-align: center;
+        margin: 0 auto;
+        ;
+        }
+        .portfolio a:hover{
+        background-color: #e74c3c;
+        }
+
+    .facebook a{
+        text-decoration: none;
+        color: white;
+        padding: 0.8rem;
+
+        }
+        .facebook a:hover{
+        background-color: #3b5998;
+        padding: 0.8rem;
+        }
+
+    .twitter a{
+        text-decoration: none;
+        color: white;
+        padding: 0.8rem;
+
+        }
+        .twitter a:hover{
+        background-color: #1da1f2;
+        padding: 0.8rem
+        }
